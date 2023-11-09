@@ -5,7 +5,7 @@ Feature: Peform Operation On Calculator
 
 
 @outline
-    Scenario Outline: Check for result for operation
+    Scenario Outline: Check calculator operation in two modes
 	Given  Open the Calculator Application 
 	And   : Select the Mode '<SpecificMode>'
 	Then  : I Enter '<Numb1>' '<numb2>' and perform add operation
