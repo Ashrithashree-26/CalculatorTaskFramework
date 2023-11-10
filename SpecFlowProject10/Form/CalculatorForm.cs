@@ -35,7 +35,6 @@ namespace Test.Form
         public AppButtons getButton(string number)
         {
             return new AppButtons(SearchCriteria.ByAutomationId($"13{number}"), "number");
-
         }
   
         public void EnterNumber(string number)

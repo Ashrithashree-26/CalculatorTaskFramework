@@ -2,7 +2,7 @@
 using TestStack.White.UIItems;
 using TestStack.White.UIItems.Finders;
 using UnitTestProject1.appl;
-using NLog;
+using NLog;//A logging library to log messages
 using System;
 
 
@@ -17,12 +17,10 @@ namespace UnitTestProject1.Elements
         {
             _searchCriteria = searchCriteria;
             _friendlyname = friendlyname;
-
         }
 
         public  IUIItem UIGetElement(   )
         {
-
             //return AppManager.AppGetWindow().appWindow.Get(_searchCriteria);
             try
             {
@@ -44,7 +42,6 @@ namespace UnitTestProject1.Elements
                 Logger.Info($"Clicked {_friendlyname} button successfully.");
                 var clickButton = UIGetElement();
                 clickButton.Click();
-
             }
             catch (Exception ex)
             {
@@ -61,7 +58,6 @@ namespace UnitTestProject1.Elements
                 Logger.Info($"Double-clicked {_friendlyname} element successfully.");
                 var ClickMenu = UIGetElement();
                 ClickMenu.DoubleClick();
-
             }
             catch (Exception ex)
             {

@@ -15,7 +15,7 @@ using TechTalk.SpecFlow.CommonModels;
 using Test.Configuration;
 
 
-namespace SpecFlowProject10.StepDefinitions
+namespace TestingFramework.StepDefinitions
 {
     [Binding]
     public class CalculatorStepDefinitions
@@ -73,9 +73,9 @@ namespace SpecFlowProject10.StepDefinitions
         {
             string num4 = p0.ToString();
 
-            bool compareReslt = CalculatorForm.CompareResult(p0);
+            bool compareResult = CalculatorForm.CompareResult(p0);
 
-            if (compareReslt == true)
+            if (compareResult == true)
             {
                 Console.WriteLine("The obtained result matches the expected value.");
             }

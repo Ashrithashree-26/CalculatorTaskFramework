@@ -9,7 +9,7 @@ namespace UnitTestProject1.Hooks
     {
         private readonly ProcessesHelpers processes = new ProcessesHelpers();
 
-        [BeforeScenario("@outline")]
+        [BeforeScenario("@closeAllInstances")]
         public void BeforeScenarioWithTag()
         {
 
@@ -18,7 +18,7 @@ namespace UnitTestProject1.Hooks
             processes.KillMultipleInstancesOfProcess(appname);
         }
 
-        [BeforeScenario(Order = 1)]
+       /* [BeforeScenario(Order = 1)]
         public void FirstBeforeScenario()
         {
 
@@ -28,6 +28,6 @@ namespace UnitTestProject1.Hooks
         public void AfterScenario()
         {
             
-        }
+        }*/
     }
 }
