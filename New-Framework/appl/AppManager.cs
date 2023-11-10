@@ -15,7 +15,6 @@ namespace UnitTestProject1.appl
         public static void LanuchApp(string appPath)
         {
             //Logger.Info($"Application launched successfully.");
-            //writing code//
             //application = Application.Launch(appPath);
             try
             {

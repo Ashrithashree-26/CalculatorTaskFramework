@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using Gherkin.CucumberMessages.Types;
+using LivingDoc.Dtos;
 using NLog;
 
 namespace Test.Configuration
@@ -13,10 +15,10 @@ namespace Test.Configuration
         static string[] configFileLines;
         public static string path(string appname)
         {
-            
+       
             try
             {
-                string configFilePath = "C:\\Users\\conspol\\source\\repos\\final\\SpecflowCalculator\\SpecFlowProject10\\Configuration\\AppConfig.txt";
+                string configFilePath = "C:\\Users\\conasr1\\source\\repos\\KT-Task-Calculator-test (2)\\KTCalculator-test\\SpecFlowProject10\\Configuration\\AppConfig.txt";
                 configFileLines = File.ReadAllLines(configFilePath);
 
                 var app1Path = GetPath(appname);

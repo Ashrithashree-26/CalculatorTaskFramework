@@ -2,7 +2,7 @@
 using TestStack.White.UIItems;
 using TestStack.White.UIItems.Finders;
 using UnitTestProject1.appl;
-using NLog;
+using NLog;//A logging library to log messages
 using System;
 
 
