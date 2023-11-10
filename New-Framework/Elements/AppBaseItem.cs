@@ -17,12 +17,10 @@ namespace UnitTestProject1.Elements
         {
             _searchCriteria = searchCriteria;
             _friendlyname = friendlyname;
-
         }
 
         public  IUIItem UIGetElement(   )
         {
-
             //return AppManager.AppGetWindow().appWindow.Get(_searchCriteria);
             try
             {
@@ -44,7 +42,6 @@ namespace UnitTestProject1.Elements
                 Logger.Info($"Clicked {_friendlyname} button successfully.");
                 var clickButton = UIGetElement();
                 clickButton.Click();
-
             }
             catch (Exception ex)
             {
@@ -61,7 +58,6 @@ namespace UnitTestProject1.Elements
                 Logger.Info($"Double-clicked {_friendlyname} element successfully.");
                 var ClickMenu = UIGetElement();
                 ClickMenu.DoubleClick();
-
             }
             catch (Exception ex)
             {

@@ -4,7 +4,7 @@
 Feature: Peform Operation On Calculator
 
 
-@outline
+@closeAllInstances
     Scenario Outline: Check calculator operation in two modes
 	Given  Open the Calculator Application 
 	And   : Select the Mode '<SpecificMode>'
